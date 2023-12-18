@@ -20,7 +20,8 @@ public class QuizOneJunitTest {
 	   public void testCheckTwoLetter() {
 	       Assert.assertTrue(quiz.checkTwoLetter("Ga"));
 	       Assert.assertFalse(quiz.checkTwoLetter("T"));
-	       Assert.assertTrue(quiz.checkTwoLetter("TaTa"));
+	       Assert.assertTrue(quiz.checkTwoLetter("Tank"));
+//	       Assert.assertTrue(quiz.checkTwoLetter("TaTa"));		   
 	   }
 
 }
