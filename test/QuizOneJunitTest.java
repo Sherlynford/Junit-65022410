@@ -12,6 +12,10 @@ public class QuizOneJunitTest {
 	       quiz = new QuizOneJunit();
 	   }
 	   @Test
+	   public void testSquare() {
+	       Assert.assertEquals(25, quiz.square(5));
+	   }
+	   @Test
 	   public void testCountLetterA() {
 	       Assert.assertEquals(0, quiz.countLetterA("school"));
 	       Assert.assertEquals(3, quiz.countLetterA("banana"));
@@ -21,7 +25,7 @@ public class QuizOneJunitTest {
 	       Assert.assertTrue(quiz.checkTwoLetter("Ga"));
 	       Assert.assertFalse(quiz.checkTwoLetter("T"));
 	       Assert.assertTrue(quiz.checkTwoLetter("Tank"));
-//	       Assert.assertTrue(quiz.checkTwoLetter("TaTa"));		   
+//	       Assert.assertTrue(quiz.checkTwoLetter("TaTa"));
 	   }
 
 }
